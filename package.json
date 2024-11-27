@@ -1,0 +1,25 @@
+{
+  "name": "bbscript",
+  "displayName": "BBScript",
+  "description": "Language support for BBScript",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bbscript",
+      "aliases": ["BBScript", "bbscript"],
+      "extensions": [".bbs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bbscript",
+      "scopeName": "source.bbs",
+      "path": "./syntaxes/bbscript.tmLanguage.json"
+    }]
+  }
+}
